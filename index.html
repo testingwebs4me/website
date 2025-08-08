@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AIVOLVE Innovations - Where Your Vision Meets AI Innovation</title>
+
+    <!-- Website Icon/Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.ibb.co/YOUR-FAVICON-IMAGE.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://i.ibb.co/YOUR-FAVICON-IMAGE.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://i.ibb.co/YOUR-FAVICON-IMAGE.png"
+    />
+
+    <!-- Google Fonts for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Cursor Dot -->
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loader">
+      <div class="triangle-loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <img
+            src="assets/ai_volve logo.png"
+            alt="AIVOLVE Logo"
+            class="logo-img"
+          />
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#vision">
+              <span data-lang="en">Vision</span>
+              <span data-lang="ar">الرؤية</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <span data-lang="en">Services</span>
+              <span data-lang="ar">الخدمات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#features">
+              <span data-lang="en">Why Aivolve</span>
+              <span data-lang="ar">لماذا Aivolve</span>
+            </a>
+          </li>
+          <li>
+            <a href="#clients">
+              <span data-lang="en">Clients</span>
+              <span data-lang="ar">العملاء</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="cta-nav">
+              <span data-lang="en">Get Started</span>
+              <span data-lang="ar">ابدأ الآن</span>
+            </a>
+          </li>
+          <!-- <li>
+            <button class="lang-switch" onclick="toggleLanguage()">AR</button>
+          </li> -->
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero parallax-element" id="home">
+      <div class="floating-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+      </div>
+      <div class="hero-content">
+        <h1 data-lang="en">AIVOLVE INNOVATIONS</h1>
+        <h1 data-lang="ar">AIVOLVE للابتكارات</h1>
+
+        <p class="tagline" data-lang="en">
+          Where Your Vision Meets AI Innovation
+        </p>
+        <p class="tagline" data-lang="ar">
+          حيث تلتقي رؤيتك بابتكار الذكاء الاصطناعي
+        </p>
+
+        <p data-lang="en">
+          Smart Tech. Real Results. Leveraging AI for Business Solutions.
+        </p>
+        <p data-lang="ar">
+          تقنية ذكية. نتائج حقيقية. الاستفادة من الذكاء الاصطناعي لحلول الأعمال.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <span data-lang="en">Start Your Transformation</span>
+            <span data-lang="ar">ابدأ التحول الرقمي</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision" id="vision">
+      <div class="vision-content reveal">
+        <h2>
+          <span data-lang="en">Our Vision</span>
+          <span data-lang="ar">رؤيتنا</span>
+        </h2>
+        <p class="vision-statement">
+          <span data-lang="en"
+            >Empowering growth through Smart Tech, Elite Talents, and Trusted
+            Innovations.</span
+          >
+          <span data-lang="ar"
+            >تمكين النمو من خلال التقنية الذكية والمواهب المتميزة والابتكارات
+            الموثوقة.</span
+          >
+        </p>
+
+        <div class="vision-pillars">
+          <div class="vision-pillar reveal">
+            <h3>
+              <span data-lang="en">Elite Talents</span>
+              <span data-lang="ar">المواهب المتميزة</span>
+            </h3>
+            <p>
+              <span data-lang="en"
+                >Access to world-class IT professionals across all domains</span
+              >
+              <span data-lang="ar"
+                >الوصول إلى محترفي تقنية المعلومات على مستوى عالمي في جميع
+                المجالات</span
+              >
+            </p>
+          </div>
+          <div class="vision-pillar reveal">
+            <h3>
+              <span data-lang="en">Smart Tech</span>
+              <span data-lang="ar">التقنية الذكية</span>
+            </h3>
+            <p>
+              <span data-lang="en"
+                >Cutting-edge AI and automation solutions that drive
+                efficiency</span
+              >
+              <span data-lang="ar"
+                >حلول الذكاء الاصطناعي والأتمتة المتطورة التي تحقق الكفاءة</span
+              >
+            </p>
+          </div>
+          <div class="vision-pillar reveal">
+            <h3>
+              <span data-lang="en">Trusted Innovations</span>
+              <span data-lang="ar">الابتكارات الموثوقة</span>
+            </h3>
+            <p>
+              <span data-lang="en"
+                >Proven solutions backed by deep expertise and strong
+                partnerships</span
+              >
+              <span data-lang="ar"
+                >حلول مثبتة مدعومة بخبرة عميقة وشراكات قوية</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h2 class="section-title reveal">
+        <span data-lang="en">What We Deliver</span>
+        <span data-lang="ar">ما نقدمه</span>
+      </h2>
+      <p class="section-subtitle reveal">
+        <span data-lang="en"
+          >Comprehensive AI-driven solutions tailored to your business
+          needs</span
+        >
+        <span data-lang="ar"
+          >حلول شاملة مدعومة بالذكاء الاصطناعي مصممة خصيصاً لاحتياجات عملك</span
+        >
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">💻</div>
+          <h3>
+            <span data-lang="en">Custom Software Development</span>
+            <span data-lang="ar">تطوير البرمجيات المخصصة</span>
+          </h3>
+          <p>
+            <span data-lang="en"
+              >Scalable, integrated solutions tailored to your unique business
+              needs</span
+            >
+            <span data-lang="ar"
+              >حلول قابلة للتطوير ومتكاملة مصممة خصيصاً لاحتياجات عملك
+              الفريدة</span
+            >
+          </p>
+          <ul class="service-features">
+            <li>
+              <span data-lang="en">AI & Advanced Analytics</span>
+              <span data-lang="ar">الذكاء الاصطناعي والتحليلات المتقدمة</span>
+            </li>
+            <li>
+              <span data-lang="en">System Integration</span>
+              <span data-lang="ar">تكامل الأنظمة</span>
+            </li>
+            <li>
+              <span data-lang="en">Data Analytics</span>
+              <span data-lang="ar">تحليل البيانات</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">☁️</div>
+          <h3>
+            <span data-lang="en">Cloud Infrastructure</span>
+            <span data-lang="ar">البنية التحتية السحابية</span>
+          </h3>
+          <p>
+            <span data-lang="en"
+              >Secure, scalable, and future-ready architectures that grow with
+              you</span
+            >
+            <span data-lang="ar"
+              >بنية تحتية آمنة وقابلة للتطوير وجاهزة للمستقبل تنمو معك</span
+            >
+          </p>
+          <ul class="service-features">
+            <li>
+              <span data-lang="en">Cloud Migration</span>
+              <span data-lang="ar">الترحيل السحابي</span>
+            </li>
+            <li>
+              <span data-lang="en">Hybrid Cloud Solutions</span>
+              <span data-lang="ar">حلول السحابة الهجينة</span>
+            </li>
+            <li>
+              <span data-lang="en">Cloud Security</span>
+              <span data-lang="ar">أمن السحابة</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🛡️</div>
+          <h3>
+            <span data-lang="en">Managed IT Services</span>
+            <span data-lang="ar">خدمات تقنية المعلومات المُدارة</span>
+          </h3>
+          <p>
+            <span data-lang="en"
+              >End-to-end management of IT operations, infrastructure, and
+              services—so you can focus on your core business</span
+            >
+            <span data-lang="ar"
+              >إدارة شاملة لعمليات وبنية تحتية وخدمات تقنية المعلومات لتتمكن من
+              التركيز على عملك الأساسي</span
+            >
+          </p>
+          <ul class="service-features">
+            <li>
+              <span data-lang="en">Cybersecurity</span>
+              <span data-lang="ar">الأمن السيبراني</span>
+            </li>
+            <li>
+              <span data-lang="en">Network Management</span>
+              <span data-lang="ar">إدارة الشبكات</span>
+            </li>
+            <li>
+              <span data-lang="en">24/7 Support</span>
+              <span data-lang="ar">دعم على مدار الساعة</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose" id="features">
+      <h2 class="section-title reveal" style="color: white">
+        <span data-lang="en">Why Choose Aivolve?</span>
+        <span data-lang="ar">لماذا تختار Aivolve؟</span>
+      </h2>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 3.31L18 8v8.93c0 4-2.55 7.7-6 8.83-3.45-1.13-6-4.82-6-8.83V8l6-2.69z"
+              />
+              <path d="M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9z" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="en">Tailored Solutions</span>
+            <span data-lang="ar">حلول مخصصة</span>
+          </h3>
+          <p>
+            <span data-lang="en"
+              >We build around your workflows, not one-size-fits-all
+              templates</span
+            >
+            <span data-lang="ar"
+              >نبني حول سير عملك، وليس قوالب واحدة تناسب الجميع</span
+            >
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z"
+              />
+              <path d="M12 7v5l4.28 2.54.72-1.21-3.5-2.08V7H12z" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="en">Agile Delivery</span>
+            <span data-lang="ar">التسليم السريع</span>
+          </h3>
+          <p>
+            <span data-lang="en"
+              >Fast, flexible development without compromising quality</span
+            >
+            <span data-lang="ar">تطوير سريع ومرن دون التنازل عن الجودة</span>
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"
+              />
+              <path d="M3 22h18v-2H3v2z" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="en">High ROI</span>
+            <span data-lang="ar">عائد استثمار مرتفع</span>
+          </h3>
+          <p>
+            <span data-lang="en"
+              >Intelligent automation that boosts efficiency and cuts cost</span
+            >
+            <span data-lang="ar">أتمتة ذكية تعزز الكفاءة وتقلل التكاليف</span>
+          </p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+              />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="en">Scalable by Design</span>
+            <span data-lang="ar">قابل للتطوير بالتصميم</span>
+          </h3>
+          <p>
+            <span data-lang="en">Engineered to grow with your business</span>
+            <span data-lang="ar">مصمم للنمو مع عملك</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IT Talent Partner Section -->
+    <section class="talent" id="talent">
+      <div class="talent-content reveal">
+        <h2>
+          <span data-lang="en">Your IT Talent Partner</span>
+          <span data-lang="ar">شريكك في مواهب تقنية المعلومات</span>
+        </h2>
+        <p class="talent-description">
+          <span data-lang="en"
+            >Through our Offshore-based subsidiary, we specialize in recruiting
+            world-class IT professionals across a wide range of domains. We
+            operate with a highly sophisticated recruitment framework, capable
+            of allocating top IT talent across all domains typically within
+            10–15 business days.</span
+          >
+          <span data-lang="ar"
+            >من خلال شركتنا الفرعية الخارجية، نتخصص في توظيف محترفي تقنية
+            المعلومات على مستوى عالمي عبر مجموعة واسعة من المجالات. نعمل بإطار
+            توظيف متطور للغاية، قادر على تخصيص أفضل مواهب تقنية المعلومات عبر
+            جميع المجالات عادة خلال 10-15 يوم عمل.</span
+          >
+        </p>
+
+        <div class="talent-features">
+          <div class="talent-feature reveal">
+            <h3>
+              <span class="number">01</span>
+              <span data-lang="en">Cost-Effective Staffing</span>
+              <span data-lang="ar">توظيف فعال من حيث التكلفة</span>
+            </h3>
+            <p>
+              <span data-lang="en"
+                >Access top talent without breaking your budget</span
+              >
+              <span data-lang="ar"
+                >الوصول إلى أفضل المواهب دون تجاوز ميزانيتك</span
+              >
+            </p>
+          </div>
+
+          <div class="talent-feature reveal">
+            <h3>
+              <span class="number">02</span>
+              <span data-lang="en">Flexible Service Solutions</span>
+              <span data-lang="ar">حلول خدمة مرنة</span>
+            </h3>
+            <p>
+              <span data-lang="en"
+                >From team augmentation to full project outsourcing</span
+              >
+              <span data-lang="ar"
+                >من تعزيز الفريق إلى الاستعانة بمصادر خارجية للمشروع
+                بالكامل</span
+              >
+            </p>
+          </div>
+
+          <div class="talent-feature reveal">
+            <h3>
+              <span class="number">03</span>
+              <span data-lang="en">Deep Technical Expertise</span>
+              <span data-lang="ar">خبرة تقنية عميقة</span>
+            </h3>
+            <p>
+              <span data-lang="en"
+                >Specialists across all IT domains and technologies</span
+              >
+              <span data-lang="ar"
+                >متخصصون في جميع مجالات وتقنيات تقنية المعلومات</span
+              >
+            </p>
+          </div>
+
+          <div class="talent-feature reveal">
+            <h3>
+              <span class="number">04</span>
+              <span data-lang="en">Dynamic Recruitment</span>
+              <span data-lang="ar">التوظيف الديناميكي</span>
+            </h3>
+            <p>
+              <span data-lang="en"
+                >Quick deployment within 10-15 business days</span
+              >
+              <span data-lang="ar">نشر سريع خلال 10-15 يوم عمل</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients" id="clients">
+      <h2 class="clients-title">Our Clients Are Always Satisfied</h2>
+      <p class="clients-subtitle">
+        We guarantee you a wonderful deal and a work experience that you will
+        never forget.<br />
+        We would like to have your logo here
+      </p>
+
+      <div class="clients-logos">
+        <img src="assets/client1.jpeg" alt="Takamul" />
+        <img src="assets/client2.jpeg" alt="Taqeem" />
+        <img src="assets/client3.jpeg" alt="Fab" />
+        <img src="assets/client4.jpeg" alt="Adwar" />
+        <img src="assets/client5.jpeg" alt="Salik" />
+        <img src="assets/client6.jpeg" alt="Saudi Central Bank" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h2 class="section-title reveal" style="color: white">
+          <span data-lang="en">Let's Create Tomorrow</span>
+          <span data-lang="ar">لنصنع الغد معاً</span>
+        </h2>
+        <p class="section-subtitle reveal" style="color: white">
+          <span data-lang="en"
+            >AI innovations. Elite talents. Your future, redefined.</span
+          >
+          <span data-lang="ar"
+            >ابتكارات الذكاء الاصطناعي. مواهب متميزة. مستقبلك، معاد
+            تعريفه.</span
+          >
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info-section reveal">
+            <h3>
+              <span data-lang="en">Contact Information</span>
+              <span data-lang="ar">معلومات الاتصال</span>
+            </h3>
+            <div class="contact-item">
+              <span>📧</span>
+              <span>info@aivolve.sa</span>
+            </div>
+            <div class="contact-item">
+              <span>📱</span>
+              <span dir="ltr">+966554021112</span>
+            </div>
+            <div class="contact-item">
+              <span>📍</span>
+              <span>
+                <span data-lang="en">Riyadh, Kingdom of Saudi Arabia</span>
+                <span data-lang="ar">الرياض، المملكة العربية السعودية</span>
+              </span>
+            </div>
+          </div>
+
+          <form class="contact-form reveal">
+            <h3>
+              <span data-lang="en">Send us a message</span>
+              <span data-lang="ar">أرسل لنا رسالة</span>
+            </h3>
+            <div class="form-group">
+              <input
+                type="text"
+                data-lang="en"
+                placeholder="Your Name"
+                required
+              />
+              <input type="text" data-lang="ar" placeholder="اسمك" required />
+              <input
+                type="email"
+                data-lang="en"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="email"
+                data-lang="ar"
+                placeholder="بريدك الإلكتروني"
+                required
+              />
+            </div>
+            <input
+              type="text"
+              data-lang="en"
+              placeholder="Subject"
+              style="width: 100%; margin-bottom: 15px"
+              required
+            />
+            <input
+              type="text"
+              data-lang="ar"
+              placeholder="الموضوع"
+              style="width: 100%; margin-bottom: 15px"
+              required
+            />
+            <textarea
+              data-lang="en"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <textarea data-lang="ar" placeholder="رسالتك" required></textarea>
+            <button type="submit" class="btn btn-primary">
+              <span data-lang="en">Send Message</span>
+              <span data-lang="ar">إرسال الرسالة</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <h3 style="color: #aeb938">AIVOLVE Innovations</h3>
+        <p>
+          <span data-lang="en">Leveraging AI for Business Solutions</span>
+          <span data-lang="ar"
+            >الاستفادة من الذكاء الاصطناعي لحلول الأعمال</span
+          >
+        </p>
+
+        <div class="social-links">
+          <a href="mailto:info@aivolve.sa" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+          </a>
+          <a href="https://linkedin.com" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+          </a>
+          <a href="https://twitter.com" title="Twitter/X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <p style="margin-top: 20px; opacity: 0.8">
+          <span data-lang="en"
+            >© 2024 Aivolve Innovations. All rights reserved.</span
+          >
+          <span data-lang="ar"
+            >© 2024 Aivolve للابتكارات. جميع الحقوق محفوظة.</span
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
